@@ -89,6 +89,8 @@
     
 }
 
+
+/* BANNER CONTAINER */
 .banner-title{
     font-family: 'OpenSans-Bold', sans-serif;
     font-size: 18px;
@@ -132,10 +134,12 @@
     transform: translateY(-50%);
 
 }
+/* SECTION CARDS CONTAINER */
 
 .cards-container-section{
     padding: 70px 59px;
     position: relative;
+    background-color: rgb(242, 244, 247);
    
 }
 
@@ -163,3 +167,113 @@
 
 
 }
+/* CARDS */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    
+}
+
+.card-title {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 20px;
+    color: #1d2351;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 13px;
+}
+
+.card-text {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
+    color: #353535;
+    margin-bottom: 10px;
+}
+
+.card-link {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* CARROUSEL */
+
+.carousel-side-image {
+    width: 40%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-side-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .carousel-content {
+    width: 50%;
+    height: 180;
+  }
+  
+  .carousel-title {
+    font-family: 'OpenSans-Bold', sans-serif;
+    margin-top: 0;
+    text-align: left;
+    color: #1d2351;
+    font-size: 48px;
+    font-weight: 700;
+
+  }
+  
+  .carrousel-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgb(242, 244, 247);
+  }
+  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-indicators {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-indicators li.active {
+    background-color: gray;
+  }
+  

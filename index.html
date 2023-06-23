@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing Page</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <section class="banner-container">
@@ -20,9 +24,54 @@
             <p class="card-container-subtitle">Súmale valor al viaje de tu cliente en cada punto de contacto a través del chat, mail, teléfono, WhatsApp y otros canales. Con inConcert vende más, brinda un mejor servicio y reduce costes operativos.</p>
             <p class="card-container-subtitle">Conoce los productos que componen nuestra plataforma omnicanal y modular diseñada para optimizar los contactos con tus clientes y los procesos de marketing, ventas, servicio y cobranza.</p>
         </div>
-        <div class="card-container">
+        <div class="card-container d-flex justify-content-between">
+            <div class="card">
+                <img src="assets/ic-site-producto-2@2x.png" alt="Imagem 1">
+                <h3 class="card-title">Conversational Bot</h3>
+                <p class="card-text">Reduce costes y mejora los resultados con inteligencia artificial.</p>
+                <a href="#" class="card-link">Ver producto</a>
+            </div>
+            <div class="card">
+                <img src="assets/ic-site-producto-3@2x.png" alt="Imagem 2">
+                <h3 class="card-title">Contact center</h3>
+                <p class="card-text">Obtén todas las herramientas y aplicaciones que necesitas para el éxito de tu centro de contactos.</p>
+                <a href="#" class="card-link">Ver producto</a>
+            </div>
+            <div class="card">
+                <img src="assets/ic-site-producto-1@2x.png" alt="Imagem 3">
+                <h3 class="card-title">Marketing Automation & CRM</h3>
+                <p class="card-text"> Potencia, rentabiliza e integra los procesos de marketing y ventas.</p>
+                <a href="#" class="card-link">Ver producto</a>
+            </div>
         </div>
-    </section>
-    <section class="carrousel-container"></section>
-</body>
-</html>
+        <section class="carrousel-container">
+            <div class="carousel-content">
+              <h5 class="carousel-title">Transformamos<br>el Contact Center en</h5>
+              <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/assets/ic-site-fold-n1-logos@2x-2.png" alt="Carousel Image 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/ic-site-fold-n2-logos@2x-2.png" alt="Carousel Image 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/ic-site-fold-n3-logos@2x-2.png" alt="Carousel Image 3">
+                  </div>
+                </div>
+              </div>
+              <div class="dots-container">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                </ol>
+            </div>
+            </div>
+            <div class="carousel-side-image">
+              <img src="assets/ic-site-imagen-1@2x.png" alt="Side Image">
+            </div>
+          </section>
+          <script src="app.js"></script>
+        </body>
+        </html>
