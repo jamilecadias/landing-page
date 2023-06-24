@@ -90,7 +90,13 @@
 }
 
 
-/* BANNER CONTAINER */
+/* BANNER */
+.banner-container {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
 .banner-title{
     font-family: 'OpenSans-Bold', sans-serif;
     font-size: 18px;
@@ -217,22 +223,6 @@
 }
 
    /* CARROUSEL */
-.carousel-side-image {
-    width: 40%;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-side-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-.carousel-content {
-    width: 50%;
-}
 
 .carousel-title {
     font-family: 'OpenSans-Bold', sans-serif;
@@ -250,32 +240,68 @@
     justify-content: space-between;
     position: relative;
     padding-bottom: 30px; /* Espaço para o dots-container */
+    margin: 50px;
+    flex-wrap: wrap;
+    
 }
 
+.carousel-content {
+    width: 50%;
+}
+
+.dots-container{
+    padding-top: 30px;
+
+}
 
 .carousel-indicators {
     list-style: disc;
-    padding: 0;
-
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 1;
+    cursor: pointer;
 }
 
-.carousel-indicators li {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    cursor: pointer;
+.carousel-side-image {
+    width: calc(40% - 20px); /* Ajuste a largura conforme necessário*/
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-side-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.carousel-buttons button {
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
 }
 
 
 /* FOOTER */
 .footer-container {
-    
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 30px;
     background-color: #f2f4f7;
     margin-top: 30px; /* Espaço entre carrousel-container e footer-container */
 }
@@ -285,10 +311,11 @@
     margin-left: 20px;
     color: #353535;
     opacity: 1;
+    margin-left: 100px;
     
 }
 
-.footer-container ol {
+.footer-container ul {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -298,7 +325,6 @@
 
 .footer-container a {
     font-family: 'OpenSans-Light', sans-serif;
-    font-weight: 400;
     color: #353535;
     opacity: 0.7;
     font-size: 13px;

@@ -47,8 +47,8 @@
             </div>
         </div>
     </section>
- <!-- CARROUSEL SECTION -->
- <section class="carrousel-container">
+<!-- CAROUSEL SECTION -->
+<section class="carrousel-container">
     <div class="carousel-content">
         <h5 class="carousel-title">Transformamos<br>el Contact Center en</h5>
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -63,27 +63,32 @@
                     <img src="/assets/carrousel1.png" alt="Carousel Image 3">
                 </div>
             </div>
+            <div class="dots-container">
+                <ol class="carousel-indicators custom-indicators">
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                </ol>
+            </div>
         </div>
-        <div class="dots-container">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-            </ol>
-        </div>
+        
     </div>
     <div class="carousel-side-image">
         <img src="assets/ic-site-imagen-1@2x.png" alt="Side Image">
+    </div>
+    <div class="carousel-buttons">
+        <button type="button" class="btn btn-primary btn-lg">Quiero una demo</button>
+        <button type="button" class="btn btn-outline-primary btn-lg">Más información</button>
     </div>
 </section>
 
 <footer class="footer-container">
     <p>©2022 inConcert</p>
-    <ol>
+    <ul class="link-list">
         <a>Aviso legal</a>
         <a>Política de Privacidad</a>
         <a>Política de Cookies</a>
-    </ol>
+    </ul>
 </footer>
 <script src="app.js"></script>
 </body>
