@@ -1,9 +1,9 @@
 $(document).ready(function() {
   $('.carousel').carousel({
-    interval: 3000  // Intervalo de troca de slides em milissegundos (3 segundos neste exemplo)
+    interval: 3000  // Slide change interval in milliseconds (3 seconds in this example)
   });
 
-  // Atualiza a classe ativa do indicador ao trocar de slide
+  // Updates the indicator's active class when changing slides
   $('#myCarousel').on('slide.bs.carousel', function(event) {
     var activeIndex = event.to;
     $('.carousel-indicators li').removeClass('active');
